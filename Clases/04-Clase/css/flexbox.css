@@ -1,0 +1,76 @@
+* {
+  font-family: sans-serif;
+}
+
+.divCuadrado {
+  width: 250px;
+  height: 250px;
+}
+
+.fondoRojo {
+  background-color: red;
+}
+
+.fondoAzul {
+  background-color: blue;
+}
+
+.fondoVerde {
+  background-color: green;
+}
+
+.fondoNaranja {
+  background-color: orange;
+}
+
+.letraBlanca {
+  color: whitesmoke;
+}
+
+.contenedor-flexible-1 {
+  height: 500px;
+  border: 15px solid black;
+  display: flex;
+  flex-direction: row; /* Valor por defecto de Flex - Eje x */
+  flex-wrap: nowrap; /* valor por defecto - No permite desbordamiento */
+  flex-wrap: wrap; /* Permite el desbordamiento - manteniendo el tamaño de la caja */
+  flex-wrap: wrap-reverse;
+  flex-flow: row wrap; /* shortcut para direction y warp */
+  justify-content: center; /* Trabaja sobre el eje principal */
+  justify-content: flex-end;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;  /* Trabaja sobre el eje secundario */
+}
+
+.contenido-1 {
+  align-self: flex-start;
+}
+
+.contenedor-flexible-2 {
+  border: 15px solid blue;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  column-gap: 25px;
+  row-gap: 75px;
+}
+
+.contenedor-flexible-3 {
+  border: 15px solid violet;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contenedor-flexible-4 {
+  border: 15px solid cornsilk;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contenedor-flexible {
+  border: 15px solid burlywood;
+  display: flex;
+  flex-direction: row-reverse;
+}

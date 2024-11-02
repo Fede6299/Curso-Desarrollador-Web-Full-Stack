@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row; /* para ser mas declarativos, es el valor por defecto */
+    justify-content: space-around; /* Alinea con respecto al eje principal */
+    align-items: center; /* Alinea con respecto al eje secundario */
+    background-color: black;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.titulo-principal {
+    font-size: 35px;
+    color: azure;
+}
+
+.elementos-lista {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: azure;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: orange;
+}

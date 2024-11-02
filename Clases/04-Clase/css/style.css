@@ -1,0 +1,66 @@
+* {
+  font-family: sans-serif;
+}
+
+.contenedor-texto::first-letter {
+  color: bisque;
+  font-weight: bold;
+  font-size: 45px;
+}
+/* Por defecto el div tiene el display es block */
+.divCuadrado {
+  width: 250px;
+  height: 250px;
+	/* display: inline; */
+}
+ 
+.fondoRojo {
+  background-color: red;
+}
+
+.fondoAzul {
+	background-color: blue;
+	position: static; /* Lo tienen por defecto todos los elementos */
+	position: relative; /* posicionamiento con respecto a sigo mismo para los demás elementos sigue siendo static */
+	position: absolute;
+	position: fixed; /* respecto a la visualización */
+	position: sticky;
+	bottom: 50px;
+	
+}
+
+.fondoVerde {
+	background-color: green;
+}
+
+.fondoNaranja {
+	background-color: orange;
+	
+}
+
+.letraBlanca {
+  color: whitesmoke;
+}
+
+.divCuadrado:hover::before {
+  content: "Esto es un contenido agregado antes del contenido principal!";
+}
+/* Agrega contenido después haber sido definido no se puede seleccionar,
+	 solo puede agregar texto */
+.divCuadrado:hover::after {
+  content: "Esto es un contenido extra con css!";
+}
+
+.fondoNaranja:hover {
+	display: block;
+}
+
+.modeloCaja {
+	/* propiedad shortcut, dado que se puede definir dentro los distintos
+		 border como border-color */
+	border: 1px solid blanchedalmond;
+	border-color: black;
+	padding: 50px;
+	margin: 150px;
+	text-align: center;
+}
