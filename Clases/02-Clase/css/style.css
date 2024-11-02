@@ -1,0 +1,27 @@
+/* Selector de etiqueta */
+* {
+  font-family: sans-serif;
+  margin: 0%;
+}
+/* Este el orden de lo más especifico a lo menos especifico */
+h5 {
+  color: steelblue;
+  font-family: sans-serif;
+}
+
+.letterMax {
+  font-size: 20px;
+}
+/* En caso de empate de cuan especifico sea, se desempata por el termino de cascada  */
+
+.letterBlue {
+    color: blue;
+}
+
+.letterRed {
+    color: red;
+}
+
+#fondoClaro {
+  background-color: aqua;
+}
