@@ -1,0 +1,33 @@
+* {
+    border: 0;
+}
+/* Uso de clases */
+.menu-elementos{
+    color: red;
+    list-style: none;
+}
+/* Uso de selectores descendentes */
+main > section ul {
+    background-color: blue;
+}
+
+main > section ol{
+    background-color: blue;
+}
+
+#titulo-section-ul{
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* 
+Al tener en cuenta la especifidad, para el ejemplo de
+de modificar el tamaño del h2, estamos siendo más
+específicos al usar una clase que un selector por etiqueta.
+el selector por etiqueta tiene (0, 0, 1) peso.
+el selector por clase tiene (0, 1, 0) peso.
+el selector por id tiene (1, 0, 0) peso.
+*/
