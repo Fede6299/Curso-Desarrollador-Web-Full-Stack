@@ -7,8 +7,11 @@ Tips: La palabra "lang" en la etiqueta html es un atributo. Investigar de que se
 
 ## Errores encontrados en el archivo `detectar-errores.html`.
 
+- Falto agregar la etiqueta principal ``<!DOCTYPE = html>``, linea 1.
+- Falta agregar ``<meta charset="UTF-8">`` para que no haya conflictos con los caracteres espaciales del español como la **ñ**.
 - La etiqueta `<h1>` de la línea 4 no debe estar dentro de la etiqueta `<head>` debe estar dentro de la etiqueta `<body>`.
-- En la etiqueta ``<meta>`` línea 6 debe usarse *meta="keyword"* y no un *id*, para indicar palabras claves que queremos resaltar de nuestra página web.
+- Linea 5 debe usarse ``name="content"`` en lugar de ``meta="description"`` para describir el contenido de la página.
+- En la etiqueta ``<meta>`` línea 6 debe usarse *name="keywords"* y no un *id*, para indicar palabras claves que queremos resaltar de nuestra página web.
 - Falta la etiqueta de cierre ``</body>`` debería cerrar en la línea 26.
 - Error al escribir etiquetas dos etiquetas distintas para un título, usando primero una etiqueta ``<h1>`` y cerrando con ``</h3>`` deben ser iguales.
 - El orden de las etiquetas de cierre es incorrecto aunque funcione, debe ser ``</em></strong>`` en la línea 13.
