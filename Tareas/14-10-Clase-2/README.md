@@ -1,3 +1,5 @@
+# HTML - Detectar Errores
+
 Descargar el archivo adjunto [detectar-errores.html](./task/detectar-errores.html "enunciado") y poner en diferentes comentarios que indiquen los errores encontrados en esta estructura básica. **Un error puede ser el faltante de una etiqueta de cierre, un mal uso de una etiqueta, entre otras**.
 Recordar que los comentarios en html se realizan de la siguiente manera => https://www.w3schools.com/html/html_comments.asp
 Tips: La palabra "lang" en la etiqueta html es un atributo. Investigar de que se trata y para que sirve. 
