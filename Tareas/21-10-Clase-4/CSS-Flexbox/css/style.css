@@ -34,18 +34,24 @@ body {
     border: 1px solid none;
     background-color: white;
     border-radius: 30px;
-    padding: 20px 200px;
+    height: 60px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.li.la-check-circle {
+li > .la-check-circle {
     color: darkgrey;
     font-size: 25px;
+    padding: 20px;
 }
 
-a {
+li > .enlaces {
     color: black;
     text-decoration: none;
-    align-self: flex-end;
+    padding: 160px;
+    justify-self: center;
 }
 
 footer {
