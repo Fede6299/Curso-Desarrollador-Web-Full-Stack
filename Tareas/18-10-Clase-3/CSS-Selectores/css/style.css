@@ -6,13 +6,10 @@
     color: red;
     list-style: none;
 }
-/* Uso de selectores descendentes */
-main > section ul {
+/* Uso de selectores descendentes y selector combinado */
+main > section ul, main > section ol {
     background-color: blue;
-}
-
-main > section ol{
-    background-color: blue;
+    color: white;
 }
 
 #titulo-section-ul{
