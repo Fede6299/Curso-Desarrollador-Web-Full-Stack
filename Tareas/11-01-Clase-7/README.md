@@ -3,6 +3,7 @@
 Crear un archivo y mediante estructuras de decisión, realizar los siguientes ejercicios:
 
 1. Utilizando arrays, realizar:
+    
     a. Almacenar en un array los 10 primeros números pares y mostrarlos en pantalla uno debajo del otro.
     
     b. Crear un array asociativo e introducir los siguientes valores: Nombre: Pedro Apellido: Torres Dirección: Av. Mayo 3703 Teléfono: 1122334455
