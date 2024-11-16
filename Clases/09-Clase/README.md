@@ -1,0 +1,1 @@
+> Se creo la BD `productos` en *phpMyAdmin*.
