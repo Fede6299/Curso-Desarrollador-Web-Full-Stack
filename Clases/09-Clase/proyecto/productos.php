@@ -18,7 +18,6 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="./agregar_producto.php">Agregar Producto</a>
                         <div class="table-wrap">
                             <table class="table">
                                 <thead class="thead-primary">
@@ -40,8 +39,8 @@
 
                                         while($unaFila = mysqli_fetch_assoc($resultado)){
                                             echo '<tr class="alert" role="alert">
-                                                    <td class="contenedor-imagen-producto">
-                                                        <img class="imagen-producto" src="'.$unaFila["imagen_producto"].'">
+                                                    <td>
+                                                        <div class="img" style="background-image: url(./img/producto1.png);"></div>
                                                     </td>
                                                     <td>
                                                         <div class="email">
@@ -53,18 +52,15 @@
                                                     <td>'.$unaFila["stock_producto"].'</td>
                                                     <td>'.$unaFila["rubro_producto"].'</td>
                                                     <td>
-                                                        <a href="eliminar_producto.php?id='.$unaFila["id_producto"].'" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                             <span aria-hidden="true"><i class="fa fa-close"></i></span>
-                                                        </a>
-                                                        <a href="editar_producto.php?id='.$unaFila["id_producto"].'" class="close" data-dismiss="alert" aria-label="Close">
-                                                            <span aria-hidden="true"><i class="fa fa-edit"></i></span>
-                                                        </a>
+                                                        </button>
                                                     </td>
                                                 </tr>';
                                         }
 
                                         mysqli_close($connection);
-                                    ?>                                
+                                    ?>
                                 
                             </tbody>
                             </table>

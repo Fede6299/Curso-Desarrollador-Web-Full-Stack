@@ -8268,12 +8268,3 @@ h1, h2, h3, h4, h5,
   color: #e9d2cc; }
   .checkbox-primary input:checked ~ .checkmark:after {
     color: #e9d2cc; }
-
-.contenedor-imagen-producto{
-  display: flex;
-  justify-content: center;
-}
-
-.imagen-producto {
-  max-width: 150px;
-}
