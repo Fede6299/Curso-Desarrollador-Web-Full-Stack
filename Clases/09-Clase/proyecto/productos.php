@@ -31,7 +31,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php 
+                                    <?php
                                         $connection = mysqli_connect("127.0.0.1:3306", "root", "", "full_stack");
 
                                         $query = "SELECT * FROM productos";
@@ -39,30 +39,28 @@
 
                                         while($unaFila = mysqli_fetch_assoc($resultado)){
                                             echo '<tr class="alert" role="alert">
-                                                    <td>
-                                                        <div class="img" style="background-image: url(./img/producto1.png);"></div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="email">
-                                                            <span>'.$unaFila["nombre_producto"].'</span>
-                                                            <span>Descripción 1</span>
-                                                        </div>
-                                                    </td>
-                                                    <td>$'.$unaFila["precio_producto"].'</td>
-                                                    <td>'.$unaFila["stock_producto"].'</td>
-                                                    <td>'.$unaFila["rubro_producto"].'</td>
-                                                    <td>
-                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                            <span aria-hidden="true"><i class="fa fa-close"></i></span>
-                                                        </button>
-                                                    </td>
-                                                </tr>';
+                                                <td>
+                                                    <div class="img" style="background-image: url(./img/producto1.png);"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="email">
+                                                        <span>'.$unaFila["nombre_producto"].'</span>
+                                                        <span>Descripción</span>
+                                                    </div>
+                                                </td>
+                                                <td>$'.$unaFila["precio_producto"].'</td>
+                                                <td>'.$unaFila["stock_producto"].'</td>
+                                                <td>'.$unaFila["rubro_producto"].'</td>
+                                                <td>
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                                    </button>
+                                                </td>
+                                            </tr>';
                                         }
-
                                         mysqli_close($connection);
                                     ?>
-                                
-                            </tbody>
+                                </tbody>
                             </table>
                         </div>
                     </div>
