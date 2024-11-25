@@ -1,0 +1,1 @@
+> El archivo `index.html` tiene **Bootstrap** y el `index2.html` no tiene **Bootstrap**.

@@ -1,0 +1,57 @@
+.fondoRojo {
+    background-color: red;
+}
+
+.fondoAzul {
+    background-color: blue;
+}
+
+.fondoVerde {
+    background-color: green;
+}
+
+.letraBlanca {
+    color: white;
+}
+
+.letraGrande {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.divCuadrado {
+    width: 250px;
+    height: 250px;
+}
+
+.divAjustable {
+    display: none;
+}
+
+/* CUANDO EL ANCHO SEA MENOR O IGUAL A 575px, APLICO EL CSS QUE ESTA ADENTRO */
+@media (max-width: 575px){
+    .letraGrande {
+        font-size: 15px;
+    }
+
+    .fondoRojo {
+        background-color: rgb(99, 0, 0);
+    }
+}
+
+/* CUANDO EL ANCHO SEA MAYOR O IGUAL A 1400px, APLICO EL CSS QUE ESTA DENTRO */
+@media (min-width: 1400px){
+    .fondoAzul {
+        background-color: rgb(116, 116, 255);
+    }
+}
+
+@media (min-width: 992px) AND (max-width: 1199px) {
+    .divOcultable {
+        display: none;
+    }
+
+    .divAjustable {
+        display: block;
+    }
+}
